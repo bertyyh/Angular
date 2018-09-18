@@ -1,0 +1,11 @@
+{
+  "/siteapi/*": {
+    "target": "http://127.0.0.1:6699",
+    "secure": true,
+    "pathRewrite": {
+      "^/siteapi": ""
+    },
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

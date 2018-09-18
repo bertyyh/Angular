@@ -1,0 +1,15 @@
+<h2>不带内存信息的状态页</h2>
+<ul>
+  <li *ngFor="let item of statusKeys">{{item}} : {{status[item]}}</li>
+</ul>
+<h2>带内存信息的状态页</h2>
+<ul>
+  <li *ngFor="let item of getMemStatsKeys">
+    <span *ngIf="item !== 'MemStats'">{{item}} : {{getMemStats[item]}}</span>
+    <span *ngIf="item === 'MemStats'">MemStats : </span>
+    <ul *ngIf="item === 'MemStats'">
+      <li *ngFor="let items of MemStatsKeys ">{{items}} : {{MemStats[items]}}</li>
+    </ul>
+  </li>
+</ul>
+<div id="output"></div>

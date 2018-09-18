@@ -1,0 +1,11 @@
+<h2>创建新产品</h2>
+<div nz-row>
+  <div nz-col nzSpan="12">
+    产品名 :
+    <input nz-input placeholder="name" [(ngModel)]="Msg.name">
+  产品描述 :
+    <textarea row="4" nz-input [(ngModel)]="Msg.description"></textarea>
+  </div>
+</div>
+<button nz-button nzType="primary" (click)="creatProduct($event)">create</button>
+

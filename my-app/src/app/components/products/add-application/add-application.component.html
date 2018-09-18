@@ -1,0 +1,10 @@
+<h2>创建应用</h2>
+<div nz-row>
+  <div nz-col nzSpan="12">
+    应用名 :
+    <input nz-input placeholder="name" [(ngModel)]="AppMsg.name">
+        应用描述 :
+    <textarea row="4" nz-input [(ngModel)]="AppMsg.description"></textarea>
+  </div>
+</div>
+<button nz-button nzType="primary" (click)="creatApp($event)">创建</button>

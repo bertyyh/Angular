@@ -1,0 +1,9 @@
+
+<ul>
+  <!-- <li *ngFor="let item of productDetailKey">{{item}} : {{productDetail[item]}}</li> -->
+  <li>产品名 : {{productDetail['Name']}}</li>
+  <li>产品描述 : {{productDetail['Description']}}</li>
+  <li>创建时间 : {{productDetail['CreateTime'] | date:'yyyy-MM-dd HH:mm:ss'}}</li>
+  <li>更新时间 : {{productDetail['UpdateTime']| date:'yyyy-MM-dd HH:mm:ss'}}</li>
+</ul>
+

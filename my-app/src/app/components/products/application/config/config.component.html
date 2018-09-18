@@ -1,0 +1,46 @@
+<button nzType="primary" nz-button (click)="addConfig()" class="editable-add-btn">
+  <i class="anticon anticon-plus"></i>添加配置
+</button>
+
+<nz-table #editRowTable nzBordered [nzData]="dataSet">
+  <thead>
+    <tr>
+      <th>配置名</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of editRowTable.data">
+      <td>
+        <div class="editable-cell">
+          <div class="editable-cell-text-wrapper">
+            <ng-container *ngIf="!editCache[data.key].edit">
+              <a [routerLink]="['/configdetail',Pid,Aid,data.key]">{{data.name}}</a>
+            </ng-container>
+            <ng-container *ngIf="editCache[data.key].edit">
+              <input type="text" nz-input [(ngModel)]="editCache[data.key].data.name">
+            </ng-container>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="editable-row-operations">
+          <ng-container *ngIf="!editCache[data.key].edit">
+            <a (click)="startEdit(data.key)">Edit</a>
+          </ng-container>
+          <ng-container *ngIf="editCache[data.key].edit">
+            <a (click)="saveEdit(data.key)">Save</a>
+            <nz-popconfirm [nzTitle]="'Sure to cancel?'" (nzOnConfirm)="cancelEdit(data.key)">
+              <a nz-popconfirm>Cancel</a>
+            </nz-popconfirm>
+          </ng-container>
+          <ng-container *ngIf="!editCache[data.key].edit">
+            <nz-popconfirm [nzTitle]="'Sure to delete?'" (nzOnConfirm)="delete(data.key)">
+              <a nz-popconfirm>Delete</a>
+            </nz-popconfirm>
+          </ng-container>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
