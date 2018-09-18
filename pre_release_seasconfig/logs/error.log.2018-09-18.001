@@ -1,0 +1,66 @@
+2018/08/08 11:06:29 [router.go:797] [D] | GET        | /status                                  | 12.760426ms      | match      | /status                                  | 
+2018/08/08 11:06:29 [router.go:797] [D] | GET        | /status                                  | 11.809149ms      | match      | /status                                  | 
+2018/08/08 11:06:31 [router.go:797] [D] | GET        | /product/all                             | 7.113007ms       | match      | /product/all                             | 
+2018/08/08 11:06:31 [router.go:797] [D] | GET        | /status                                  | 819.13µs         | match      | /status                                  | 
+2018/08/08 11:06:31 [router.go:797] [D] | GET        | /status                                  | 697.748µs        | match      | /status                                  | 
+2018/09/17 15:41:51 [app.go:94] [I] http server Running on :6699
+2018/09/17 15:41:57 [router.go:797] [D] | GET        | /product/all                             | 2.016575ms       | match      | /product/all                             | 
+2018/09/17 15:42:04 [router.go:823] [C] the request url is  /product/1532082163746 
+2018/09/17 15:42:04 [router.go:824] [C] Handler crashed with error runtime error: invalid memory address or nil pointer dereference 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/go/src/runtime/asm_amd64.s:514 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/go/src/runtime/panic.go:489 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/go/src/runtime/panic.go:63 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/go/src/runtime/signal_unix.go:290 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/go/src/sync/mutex.go:48 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/gopath/src/github.com/SeasX/SeasConfig/Models/ModProducts.go:85 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/gopath/src/github.com/SeasX/SeasConfig/Controllers/CtrProduct.go:59 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/gopath/src/github.com/CloudWise-OpenSource/GoCrab/Api/router.go:743 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/go/src/net/http/server.go:2568 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/go/src/net/http/server.go:1825 
+2018/09/17 15:42:04 [router.go:830] [C] /data/www/golang/go/src/runtime/asm_amd64.s:2197 
+2018/09/17 15:42:11 [router.go:797] [D] | GET        | /product/all                             | 133.378µs        | match      | /product/all                             | 
+2018/09/17 15:42:18 [router.go:797] [D] | GET        | /product/aaaaa                           | 108.84µs         | match      | /product/:PID                            | 
+2018/09/17 15:42:20 [router.go:797] [D] | GET        | /product/all                             | 125.216µs        | match      | /product/all                             | 
+2018/09/17 15:42:23 [router.go:797] [D] | GET        | /product/all                             | 137.593µs        | match      | /product/all                             | 
+2018/09/17 15:42:30 [router.go:797] [D] | GET        | /product/test2                           | 81.503µs         | match      | /product/:PID                            | 
+2018/09/17 15:42:34 [router.go:797] [D] | GET        | /product/all                             | 263.361µs        | match      | /product/all                             | 
+2018/09/17 16:25:59 [router.go:797] [D] | GET        | /status                                  | 10.969935ms      | match      | /status                                  | 
+2018/09/17 16:25:59 [router.go:797] [D] | GET        | /status                                  | 10.335447ms      | match      | /status                                  | 
+2018/09/17 16:26:33 [router.go:797] [D] | GET        | /status                                  | 134.638µs        | match      | /status                                  | 
+2018/09/17 16:26:33 [router.go:797] [D] | GET        | /status                                  | 328.168µs        | match      | /status                                  | 
+2018/09/17 16:26:53 [router.go:797] [D] | GET        | /status                                  | 703.415µs        | match      | /status                                  | 
+2018/09/17 16:26:53 [router.go:797] [D] | GET        | /status                                  | 883.076µs        | match      | /status                                  | 
+2018/09/17 16:43:45 [router.go:797] [D] | GET        | /status                                  | 440.871µs        | match      | /status                                  | 
+2018/09/17 16:43:45 [router.go:797] [D] | GET        | /status                                  | 137.583µs        | match      | /status                                  | 
+2018/09/17 17:04:42 [router.go:797] [D] | GET        | /status                                  | 331.267µs        | match      | /status                                  | 
+2018/09/17 17:04:42 [router.go:797] [D] | GET        | /status                                  | 424.977µs        | match      | /status                                  | 
+2018/09/17 17:06:25 [router.go:797] [D] | GET        | /status                                  | 119.888µs        | match      | /status                                  | 
+2018/09/17 17:06:25 [router.go:797] [D] | GET        | /status                                  | 2.239475ms       | match      | /status                                  | 
+2018/09/17 17:06:38 [router.go:797] [D] | GET        | /status                                  | 98.063µs         | match      | /status                                  | 
+2018/09/17 17:06:38 [router.go:797] [D] | GET        | /status                                  | 1.634214ms       | match      | /status                                  | 
+2018/09/17 17:06:58 [router.go:797] [D] | GET        | /status                                  | 81.4µs           | match      | /status                                  | 
+2018/09/17 17:06:58 [router.go:797] [D] | GET        | /status                                  | 1.354431ms       | match      | /status                                  | 
+2018/09/17 17:07:08 [router.go:797] [D] | GET        | /status                                  | 67.828µs         | match      | /status                                  | 
+2018/09/17 17:07:08 [router.go:797] [D] | GET        | /status                                  | 193.992µs        | match      | /status                                  | 
+2018/09/17 17:07:25 [router.go:797] [D] | GET        | /status                                  | 792.835µs        | match      | /status                                  | 
+2018/09/17 17:07:25 [router.go:797] [D] | GET        | /status                                  | 249.091µs        | match      | /status                                  | 
+2018/09/17 17:08:14 [router.go:797] [D] | GET        | /status                                  | 303.558µs        | match      | /status                                  | 
+2018/09/17 17:08:14 [router.go:797] [D] | GET        | /status                                  | 301.586µs        | match      | /status                                  | 
+2018/09/17 17:08:25 [router.go:797] [D] | GET        | /status                                  | 73.653µs         | match      | /status                                  | 
+2018/09/17 17:08:25 [router.go:797] [D] | GET        | /status                                  | 267.561µs        | match      | /status                                  | 
+2018/09/17 17:09:10 [router.go:797] [D] | GET        | /status                                  | 107.007µs        | match      | /status                                  | 
+2018/09/17 17:09:10 [router.go:797] [D] | GET        | /status                                  | 223.421µs        | match      | /status                                  | 
+2018/09/17 17:11:41 [router.go:797] [D] | GET        | /status                                  | 216.847µs        | match      | /status                                  | 
+2018/09/17 17:11:41 [router.go:797] [D] | GET        | /status                                  | 160.171µs        | match      | /status                                  | 
+2018/09/17 17:12:26 [router.go:797] [D] | GET        | /status                                  | 92.148µs         | match      | /status                                  | 
+2018/09/17 17:12:26 [router.go:797] [D] | GET        | /status                                  | 370.016µs        | match      | /status                                  | 
+2018/09/17 17:12:37 [router.go:797] [D] | GET        | /status                                  | 73.264µs         | match      | /status                                  | 
+2018/09/17 17:12:37 [router.go:797] [D] | GET        | /status                                  | 192.996µs        | match      | /status                                  | 
+2018/09/17 17:12:52 [router.go:797] [D] | GET        | /status                                  | 82.655µs         | match      | /status                                  | 
+2018/09/17 17:12:52 [router.go:797] [D] | GET        | /status                                  | 147.784µs        | match      | /status                                  | 
+2018/09/17 17:13:00 [router.go:797] [D] | GET        | /status                                  | 82.741µs         | match      | /status                                  | 
+2018/09/17 17:13:00 [router.go:797] [D] | GET        | /status                                  | 144.284µs        | match      | /status                                  | 
+2018/09/17 17:26:26 [router.go:797] [D] | GET        | /status                                  | 167.328µs        | match      | /status                                  | 
+2018/09/17 17:26:26 [router.go:797] [D] | GET        | /status                                  | 173.991µs        | match      | /status                                  | 
+2018/09/17 17:26:54 [router.go:797] [D] | GET        | /status                                  | 118.592µs        | match      | /status                                  | 
+2018/09/17 17:26:54 [router.go:797] [D] | GET        | /status                                  | 177.796µs        | match      | /status                                  | 
